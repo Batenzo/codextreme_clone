@@ -271,3 +271,97 @@ a{
     font-size: 50px;
     font-weight: 400; 
 }
+
+/* ---------------------------------------------TRACKS---------------------------------------- */
+
+.tracks{
+    margin-top: 137px;
+}
+
+.tracks-txt h2{
+    font-size: 50px;
+}
+
+.tracks-txt p{
+    font-size: var(--paragraph-size);
+    font-weight: 400;
+}
+
+.tracks-cont{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: repeat(2, 200px);
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.extra-tracks{
+    display: none;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: repeat(2, 300px);
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    
+}
+
+.track{
+    text-align: center;
+}
+
+.track-img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #0000004D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.track p{
+    font-size: var(--paragraph-size);
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.seemore{
+    display: block;
+    text-align: center;
+}
+
+input[type="checkbox"]{
+    display: block;
+    height: 2em;
+    appearance: none;
+}
+
+label{
+    position: relative;
+    padding: 1em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+label:before{
+    content: "See more >>";
+    font-size: 30px;
+    font-weight: 700;
+}
+
+input[type="checkbox"]:checked ~ label:before{
+    content: "See less >>";
+}
+
+/* .extra-tracks:has(~ input[type="checkbox"]:checked){
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: repeat(2, 300px);
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+} */
