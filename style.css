@@ -1,0 +1,273 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #000000;
+    --secondary-color: #6F6F6F;
+    --red-color: #D10000;
+
+    /* font-size */
+    --paragraph-size: 20px;
+}
+
+body{
+    font-family: "Space Mono", monospace;
+    color: var(--primary-color);
+    padding: 25px 70px;
+}
+
+a{
+    color: var(--primary-color);
+}
+
+/* Header */
+
+/* header{
+    padding: 25px 70px;
+} */
+
+.header_cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 21px;
+}
+
+.buttons-cont a{
+    font-weight: 700;
+    border: 0.5px solid #0000004D;
+    border-radius: 25px;
+    padding: 22px 22px ;
+}
+
+/* ---------------------------------------HERO SECTION------------------------------------ */
+
+.hero{
+    margin-top: 150px;
+}
+
+/* Hero headers */
+.hero_headers{
+    padding-bottom: 34px;
+}
+
+.hero_headers h1{
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.hero_headers h2{
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--primary-color);
+    opacity: 50%;
+}
+
+/* Hero paragraph */
+
+.hero_p h4{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.hero_p p{
+    font-weight: 400;
+    font-size: var(--paragraph-size);
+}
+
+/* Hero carousel */
+
+
+.slider{
+    width: 1010px;
+    /* height: 159px; */
+    margin-top: 43px;
+    overflow: hidden;
+    
+}
+
+.slides{
+    width: 300%;
+    height: 159px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+/* First slide (LEARN) */
+.slide.first, .slide.second, .slide.third{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.slide.first{
+    margin-top: 45px;
+}
+
+.slide.first .title{
+    padding: 43px 21px;
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    color: #fff;
+}
+
+.slide.first .title h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.slide.first .description{
+    background-color: #6F6F6F1A;
+    padding: 54px;
+    border-radius: 25px;
+}
+
+.slide.first .description p{
+    font-size: var(--paragraph-size);
+    font-weight: 400;
+}
+
+
+/* Second slide (BUILD) */
+
+.slide.second .title{
+    padding: 43px 21px;
+    background-color: var(--red-color);
+    border-radius: 25px;
+    color: #fff; 
+}
+
+.slide.second .title h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.slide.second .description{
+    background-color: #D100001A;
+    padding: 29px 33px 19px 33px;
+    border-radius: 25px;
+}
+
+.slide.second .description p{
+    font-size: var(--paragraph-size);
+    font-weight: 400;
+}
+
+/* Third slide (SHARE) */
+
+.slide.third .title{
+    padding: 43px 21px;
+    background-color: #000000;
+    border-radius: 25px;
+    color: #fff; 
+}
+
+.slide.third .title h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.slide.third .description{
+    background-color: #0000001A;
+    padding: 24px 33px;
+    border-radius: 25px;
+}
+
+.slide.third .description p{
+    font-size: var(--paragraph-size);
+    font-weight: 400;
+}
+
+/* Register button */
+
+.register-btn{
+    text-align: center;
+    margin-top: 55px;
+}
+
+.register-btn a{
+    font-weight: 700;
+    border: 0.5px solid #0000004D;
+    border-radius: 25px;
+    padding: 22px 22px ;
+    font-size: 18px;    
+}
+
+
+/* --------------------------------------------ABOUT US---------------------------------- */
+
+.about-us{
+    margin-top: 127px;
+}
+
+.about-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+.par-1 h2, .par-2 h2{
+    font-weight: 700;
+    font-size: 50px;
+}
+.par-1{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.par-1 p, .par-2 p{
+    font-size: var(--paragraph-size);
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.figures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 257px;
+    margin-top: 37px;
+}
+
+.fig-1 h1, .fig-2 h1{
+    font-size: 150px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.fig-1 h2, .fig-2 h2{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.fig-2 h1{
+    color: #D1000080;
+}
+
+
+.one-full h1{
+    font-size: 150px;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.one-full h2{
+    font-size: 50px;
+    font-weight: 400; 
+}
