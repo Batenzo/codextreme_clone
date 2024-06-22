@@ -1,6 +1,6 @@
 *{
     text-decoration: none;
-    list-style: none;
+    /* list-style: none; */
     margin: 0;
     padding: 0;
 }
@@ -276,6 +276,7 @@ a{
 
 .tracks{
     margin-top: 137px;
+    margin-bottom: 100px;
 }
 
 .tracks-txt h2{
@@ -344,6 +345,7 @@ label{
     padding: 1em;
     text-decoration: underline;
     cursor: pointer;
+    margin-top: 76px;
 }
 
 label:before{
@@ -356,12 +358,53 @@ input[type="checkbox"]:checked ~ label:before{
     content: "See less >>";
 }
 
-/* .extra-tracks:has(~ input[type="checkbox"]:checked){
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: repeat(2, 300px);
-    gap: 100px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 64px;
-} */
+/* --------------------------------------SCHEDULE--------------------------------------- */
+
+.schedule{
+    margin-top: 55px;
+    margin-bottom: 140px;
+}
+.schedule h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.tabs{
+    margin-top: 26px;
+    display: flex;
+    gap: 39px;
+}
+
+.tab-button{
+    font-size: var(--paragraph-size);
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    padding: 18px 47px;
+    border-radius: 25px;
+    background-color: #fff;
+    border: 1px solid #0000004D;
+    cursor: pointer;
+}
+
+.tab-button.active{
+    background-color: #6F6F6F1A;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content ul li{
+    font-size: var(--paragraph-size);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.tab-content ul{
+    margin-top: 71px;
+}
+
+.tab-content.active{
+    display: block;
+    list-style-type:decimal;    
+}
