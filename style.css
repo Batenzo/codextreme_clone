@@ -408,3 +408,75 @@ input[type="checkbox"]:checked ~ label:before{
     display: block;
     list-style-type:decimal;    
 }
+/* -------------------------------------------PANEL------------------------------------- */
+
+.panel{
+    margin-bottom: 154px;
+}
+.panel h1{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.panel-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-container h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.speakers{
+    display: flex;
+    justify-content: space-between;
+    gap: 145px;
+    margin-top: 45px;
+    margin-bottom: 35px;
+}
+
+.speaker{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pic {
+    width: 150px;
+    height: 150px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+.speaker h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.judges{
+    display: flex;
+    justify-content: space-between;
+    gap: 145px;
+    margin-top: 45px;
+}
+
+.judge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.judge h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.panel-container a{
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 66px;
+}
