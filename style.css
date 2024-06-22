@@ -480,3 +480,27 @@ input[type="checkbox"]:checked ~ label:before{
     font-weight: 700;
     margin-top: 66px;
 }
+/* ---------------------------------Prizes---------------------------------------- */
+
+.prizes{
+    margin-bottom: 236px;
+}
+.prizes h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.prizes-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 106px;
+}
+
+.prizes-container p{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 65px;
+}
