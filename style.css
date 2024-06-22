@@ -504,3 +504,32 @@ input[type="checkbox"]:checked ~ label:before{
     text-align: center;
     margin-top: 65px;
 }
+/* ----------------------------------Sponsors ---------------------------------------- */
+
+.sponsors h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.sponsor-container {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+
+}
+
+.sponsors a{
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.sponsor-seemore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 86px;
+}
