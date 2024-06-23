@@ -26,3 +26,13 @@ function showTab(dayId, element) {
 document.addEventListener('DOMContentLoaded', function() {
     showTab('day1', document.querySelector('.tab-button'));
 });
+
+// Faq accordion
+
+const faqs = document.querySelectorAll('.faq-el');
+
+faqs.forEach(faq => {
+    faq.addEventListener('click', () => {
+        faq.classList.toggle("active");
+    })
+})

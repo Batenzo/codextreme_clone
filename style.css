@@ -17,6 +17,10 @@
 body{
     font-family: "Space Mono", monospace;
     color: var(--primary-color);
+    
+}
+
+main{
     padding: 25px 70px;
 }
 
@@ -26,9 +30,9 @@ a{
 
 /* Header */
 
-/* header{
+header{
     padding: 25px 70px;
-} */
+}
 
 .header_cont{
     display: flex;
@@ -586,4 +590,158 @@ input[type="checkbox"]:checked ~ label:before{
     font-weight: 700;
     text-decoration: underline;
     text-align: center;   
+}
+
+/* -------------------------------------------FAQ-------------------------------------- */
+
+.faq{
+    margin-bottom: 195px;
+}
+
+.faq h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.faq-container{
+    margin-top: 100px;
+    
+}
+
+.faq-el{
+    border: 1px solid #0000004D;
+    padding: 15px 40px;
+}
+/* First faq  border radius*/
+.faq-1{
+    border-radius: 25px 25px 0px 0px;
+}
+
+/* Last faq border radius */
+
+.faq-l{
+    border-radius: 0px 0px 25px 25px;
+}
+
+.question{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+}
+
+.question div{
+    display: flex;
+    gap: 18px;
+}
+
+.question div p{
+    font-size: var(--paragraph-size);
+    font-weight: 400;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+
+.answer p{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: var(--paragraph-size);
+}
+
+.faq-el.active .answer{
+    max-height: 300px;
+}
+
+.faq-el.active .chevron{
+    transform: rotate(180deg);
+}
+
+.faq-more{
+    text-align: center;
+    margin-top: 16px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.faq-more a{
+    text-decoration: underline;
+}
+
+/* -------------------------------------------FOOTER---------------------------------------- */
+
+footer{
+    background-color: #000000E5;
+    color: #FFFFFF;
+    margin-top: 64px;
+    padding: 65px 70px;
+}
+
+.footer-txt h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.footer-txt h3{
+    font-size: 30px;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 80%;
+}
+
+.bring-codx{
+    color: #FFFFFF;
+    opacity: 80%;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    margin-top: 80px;
+    gap: 150px;
+}
+
+.footer-links ul{
+    list-style: none;
+    line-height: 44px;
+    
+}
+
+.footer-links ul li{
+    color: #FFFFFF;
+    opacity: 50%;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.footer-links ul .link-title{
+    color: #FFFFFF;
+    opacity: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-links .support li{
+    text-decoration: none;
+}
+
+.footer-links .support li .email{
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+footer p{
+    text-align: center;
+    color: #FFFFFF80;
+    font-size: 30px;
+    margin-top: 37px;
 }
