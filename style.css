@@ -505,7 +505,9 @@ input[type="checkbox"]:checked ~ label:before{
     margin-top: 65px;
 }
 /* ----------------------------------Sponsors ---------------------------------------- */
-
+.sponsors{
+    margin-bottom: 73px;
+}
 .sponsors h1{
     font-size: 50px;
     font-weight: 700;
@@ -532,4 +534,56 @@ input[type="checkbox"]:checked ~ label:before{
     align-items: center;
     justify-content: center;
     margin-top: 86px;
+}
+/* ------------------------------------------Team------------------------------------- */
+
+.team{
+    margin-top: 55px;
+    margin-bottom: 172px;
+}
+.team h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(4, 210px);
+    grid-template-rows: repeat(2, 270px);
+    justify-content: center;
+    align-items: center;
+    /* gap: 126px; */
+    column-gap: 126px;
+}
+
+.t1{
+    grid-row: span 1;
+    grid-column: span 4;
+    justify-self: center;
+}
+
+.team-mber{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.team-mber p{
+    font-size: var(--paragraph-size);
+    font-weight: 400;
+}
+
+.team-mber a{
+    text-decoration: underline;
+    font-size: var(--paragraph-size);
+    font-weight: 400;
+}
+
+.sponsor-seemore a{
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;   
 }
